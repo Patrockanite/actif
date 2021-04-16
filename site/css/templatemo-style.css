@@ -412,17 +412,20 @@ header {
   background-size: cover;
   display: block;
 }
-
+/* Les images du slider sont ici */
 .Modern-Slider .item-1 .image {
-  background-image: url(../img/slide_1.jpg);
+  background-image: url(../img/slide_baleines.jpg);
+  /*background-image: url(../img/slide_1.jpg);*/
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: url(../img/slide_2.jpg);
+  background-image: url(../img/slide_eauze.jpeg);
+  /*background-image: url(../img/slide_2.jpg);*/
 }
 
 .Modern-Slider .item-3 .image {
-  background-image: url(../img/slide_3.jpg);
+  background-image: url(../img/slide_st_jean_luzjpg.jpg);
+  /*background-image: url(../img/slide_3.jpg);*/
 }
 
 .Modern-Slider .PrevArrow:before{content:'\f104';}
