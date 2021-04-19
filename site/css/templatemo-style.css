@@ -597,26 +597,27 @@ header {
 
 
 /* Projects Style */
+/*J'ai ajouté #projects_2 */
 
-#projects {
+#projects, #projects_2 {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 50px;
 }
 
-#projects .masonry {
+#projects .masonry, #projects_2 .masonry {
   position: relative;
   width: 100%;
 }
 
-#projects .masonry .item img {
+#projects .masonry .item img, #projects_2 .masonry .item img {
   transition: all 1s;
   width: 100%;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
-#projects .masonry .item img:hover {
+#projects .masonry .item img:hover, #projects_2 .masonry .item img:hover {
   opacity: 0.5;
 }
 
