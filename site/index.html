@@ -40,9 +40,13 @@
                         <ul class="nav navbar-nav">
                             <!--Modifications autorisées ici-->
                             <li><a href="#top">Accueil</a></li>
-                            <li><a href="#featured">Maison à vendre à Eauze</a></li>
-                            <li><a href="#projects">Appartement à vendre à Aire sur l'Adour</a></li>
-                            <li><a href="#video">Maison à louer sur l'ile de Ré</a></li>
+                            <li><a href="#featured">Ventes d'appartements</a></li>
+                            <li><a href="#featured">Locations de vacances</a></li>
+                            <li><a href="#projects">En savoir plus</a></li>
+                            
+                            <!--Lien vers la vidéo désactivé par un commentaire-->
+                            <!--li><a href="#video">Maison à louer sur l'ile de Ré</a></li-->
+
                             <!--Tu peux utiliser ce qui est considéré comme blog pour mettre tes dispos je pense-->
                             <li><a href="#blog">Locations disponibles</a></li>
                             <li><a href="#contact">Contactez-moi</a></li>
@@ -72,28 +76,36 @@
                             <a href="#featured">
                                 <span class="rect"></span>
                                 <span class="circle"></span>
-                                Les Ventes
+                                Ventes d'appartements
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#featured">
+                                <span class="rect"></span>
+                                <span class="circle"></span>
+                                Location de vacances
                             </a>
                         </li>
                         <li>
                             <a href="#projects">
                                 <span class="rect"></span>
                                 <span class="circle"></span>
-                                Les locations
+                                En savoir plus
                             </a>
                         </li>
-                        <li>
+                        <!--Lien vers la vidéo désactivé par une balise commentaire-->
+                        <!--li>
                             <a href="#video">
                                 <span class="rect"></span>
                                 <span class="circle"></span>
                                 Presentation
                             </a>
-                        </li>
+                        </li-->
                         <li>
                             <a href="#blog">
                                 <span class="rect"></span>
                                 <span class="circle"></span>
-                                Propositions
+                                Locations disponibles
                             </a>
                         </li>
                         <li>
@@ -394,7 +406,10 @@
                         </div>
                     </div>            
                 </section><!--fin de la section projects_2-->
-                <section id="video" class="content-section"><!--cette section vidéo peut être desactivée pour l'instant-->
+
+
+                <!--cette section vidéo est desactivée pour l'instant par l'ajout d'un commentaire ouvert en amont et fermé en aval -->
+                <!--section id="video" class="content-section"
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-heading">
@@ -419,7 +434,10 @@
                             </div>
                         </div>
                     </div>
-                </section><!--fin de la section vidéo-->
+                </section-->
+                <!--fin de la section vidéo-->
+
+                <!--Début du bloc "blog" on changera le nom plus tard-->
                 <section id="blog" class="content-section"><!--Début de la section "blog"-->
                     <div class="section-heading">
                         <h1>Blog<br><em>Entries</em></h1>
@@ -624,17 +642,20 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section><!--fin de la section blog-->
+                
+                <!--début de la section contact-->
+                <!--peut-être qu'il faudra du php ici pour utiliser le formulaire. On verra après-->
                 <section id="contact" class="content-section">
                     <div id="map">
                     
-                        <!-- How to change your own map point
-                            1. Go to Google Maps
-                            2. Click on your location point
-                            3. Click "Share" and choose "Embed map" tab
-                            4. Copy only URL and paste it within the src="" field below
+                        <!-- Comment renseigner vos propres coordonnées de carte
+                             1. Accédez à Google Maps
+                             2. Cliquez sur votre point de localisation
+                             3. Cliquez sur "Partager" et choisissez l'onglet "Intégrer la carte"
+                             4. Copiez uniquement l'URL et collez-la dans le champ src = "" ci-dessous
                         -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.2828722516983!2d-0.4840681842341893!3d43.87069044635701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55d0d3d9483523%3A0x365dc7335afb3be5!2sCarrosserie%20Fix%20Auto%20Mont%20de%20Marsan%20(anciennement%20Carrosserie%2040)!5e0!3m2!1sfr!2sfr!4v1617268138283!5m2!1sfr!2sfr" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.493782277783!2d-0.26487908423813195!3d43.70028645740211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd560c89fdd5a579%3A0xc5d6153a47b57726!2sMairie%20d&#39;Aire%20sur%20l&#39;Adour!5e0!3m2!1sfr!2sfr!4v1618849412943!5m2!1sfr!2sfr" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                     <div id="contact-content">
                         <div class="section-heading">
