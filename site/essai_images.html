@@ -224,15 +224,25 @@
                     <div class="masonry">
                         <div class="row">
                             <div class="item">
-                                <div class="col-md-4"><!--c'était 8-->
+                                
+                                <div class="col-md-4">
+                                    
                                     <!--Il faut que je revoie les dimensions des photos positionnées ici-->
                                     <!--Les images qui suivent a href sont celles qui défilent et les images img src sont celles qui sont sur la -->
                                     <!--Il faut voir pourquoi l'image pixelise-->
                                     <a href="img/img_essais/anthony-choren-8tGDcw9BQR0-unsplash.jpg" data-lightbox="image_Aire"><img src="img/img_essais/anthony-choren-A_Hrd8m_hPA-unsplash.jpg" alt="Cuisine" title="Cliquer pour visiter"></a>
-                                    <a href="img/img_essais/james-orr-H5FRFYYG-ME-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 2" title="cuisine"></a>
+                                    <a href ="img/img_essais/james-orr-H5FRFYYG-ME-unsplash.jpg" data-lightbox="image_Aire" alt="image 2" title="cuisine" class="a_cacher"></a>
+                                     
+                                    
+                                    <!--a href="img/img_essais/james-orr-H5FRFYYG-ME-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 2" title="cuisine"></a>
                                     <a href="img/img_essais/quino-al-3c_akLTXTek-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 3" title="salle de bain"></a>
-                                    <a href="img/img_essais/quino-al-3c_akLTXTek-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 3" title="salle de bain"></a>
-                                    <a href="img/img_essais/anthony-choren-A_Hrd8m_hPA-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 5"></a>
+                                    <a href="img/img_essais/quino-al-3c_akLTXTek-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 4" title="salle de bain"></a>
+                                    <a href="img/img_essais/anthony-choren-A_Hrd8m_hPA-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 5"></a-->
+
+
+
+
+
                                 </div>
                             </div>
                             <div class="item second-item">
@@ -242,11 +252,11 @@
                                 </div>
                             </div>
                            
-                            <div class="item">
+                            <!--div class="item">
                                 <div class="col-md-3">
-                                    <a href="img/img_essais/robin-alves-Z1CdoHFR4JQ-unsplash.jpg" data-lightbox="image_Aire"><img src="img/portfolio_1.jpg" alt="image 4" id="a_cacher_1"></a>
+                                    <a href="img/img_essais/robin-alves-Z1CdoHFR4JQ-unsplash.jpg" data-lightbox="image_Aire"><img src="img/portfolio_1.jpg" alt="image 4" class="a_cacher"></a>
                                 </div>
-                            </div>
+                            </div-->
                             <div class="item">
                                 <div class="col-md-4">
                                     <div id="map"> 
@@ -262,11 +272,11 @@
                                     <!--a href="img/img_essais/quino-al-3c_akLTXTek-unsplash.jpg" data-lightbox="image_Aire"><img src="" alt="image 3" title="salle de bain"></a-->
                                 </div>
                             </div>
-                            <div class="item"><!--c'était 8-->
+                            <!--div class="item">
                                 <div class="col-md-6">
-                                    <a href="img/img_essais/pascal-bernardon-E-rILs_LwCk-unsplash.jpg" data-lightbox="image_Aire"><img src="img/img_essais/pascal-bernardon-E-rILs_LwCk-unsplash.jpg" alt="image 5" id="a_cacher_2"></a>
+                                    <a href="img/img_essais/pascal-bernardon-E-rILs_LwCk-unsplash.jpg" data-lightbox="image_Aire"><img src="img/img_essais/pascal-bernardon-E-rILs_LwCk-unsplash.jpg" alt="image 5" class="a_cacher"></a>
                                 </div>
-                            </div>
+                            </div-->
                         </div>
                     </div>
                 </div>            
@@ -326,8 +336,8 @@
     <!--Mes Jquery pour cacher les images-->
     <script>
         $(document).ready(function(){
-            $("#a_cacher_1").hide();
-            $("#a_cacher_2").hide();
+            $(".a_cacher").hide();
+            //$("#a_cacher_2").hide();
         });
     </script>
 
