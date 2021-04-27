@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="css/nos_styles.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
@@ -118,18 +119,17 @@
                 </ul>
             </nav>
             <!--Début du "bloc" réseaux sociaux qui peut être désactivé-->
-            <ul class="social-icons">
+            <!--ul class="social-icons">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa fa-rss"></i></a></li>
                 <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            </ul>
+            </ul-->
             <!--fin du bloc réseaux sociaux-->
         </div>
         <!--La présentation d'accueil est ici entre cette balise de commentaire et ma suivante qui indique la fin-->
-        <!--les photos de ce bloc sont gérées dans le fichier templatemo-style.css et non dans le répertoire img-->
-        <!-- C'est parce qu'elle sont utilisées en tant qu'images de fond et non comme photos d'illustration -->
+
         <div class="slider">
             <div class="Modern-Slider content-section" id="top">
                 <!-- Item -->
@@ -142,7 +142,7 @@
                         <p>Il y aura beaucoup de visiteurs sur ce site.<br>
                             Il est dédié à la loc et vente d'appart</p>
                         <div class="white-button button">
-                            <a href="#featured">Discover More</a>
+                            <a href="#featured">Voir la maison</a>
                         </div>
                         </div>
                         </div>
@@ -160,7 +160,7 @@
                             <br>Thank you for helping us.</p>
                         
                         <div class="white-button button">
-                            <a href="#featured">Share More</a>
+                            <a href="#featured">En savoir plus</a>
                         </div>
                         </div>
                         </div>
@@ -175,10 +175,10 @@
                         <div>
                         <h1>Un appartement au bord de l'Adour<br>Aire sur l'Adour</h1>
                         <!--J'ai modifié la couleur de texte et de fond ici sinon on ne le voit pas sur le fond blanc-->
-                        <p style="background-color: whitesmoke;color: rgb(27, 25, 25);">On pourra toujours modifier la couleur si le fond est blanc<br>et que ça nous empêche de voir le texte. Il vaut mieux prendre <br>une photo qui ne pose pas ce problème</p>
+                        <p>On pourra toujours modifier la couleur si le fond est blanc<br>et que ça nous empêche de voir le texte. Il vaut mieux prendre <br>une photo qui ne pose pas ce problème</p>
                         
                         <div class="white-button button">
-                            <a href="#featured">Learn More</a>
+                            <a href="#featured">En savoir plus</a>
                         </div>
                         </div>
                         </div>
@@ -325,8 +325,9 @@
                 </div>
             </section>
             <!--******************************************* Travail principal du moment ici ************************************************-->
-            <!--Ici commence le bloc Recent projects qui peut devenir "En savoir" (par exemple) ou qui peut être totalement désactivé -->
-            <section id="projects" class="content-section"><!--Il faut que j'essaye de créer un autre bloc projects 2 pour faire pointer les liens du bloc Carousel des coups de coeurs vers les affaires concernées-->
+            <!--Ici commence le bloc projects-->
+            <!-- *****************   Aire sur l'Adour ********************----->
+            <section id="projects" class="content-section">
                 <div class="section-heading">
                     <h1>Appartement à Aire sur la route de St Jacques de Compostelle<br><em>170000 €uros</em></h1>
                     <p>Intérieur entièrement rénové, 2ème étage 
@@ -337,9 +338,13 @@
                         <div class="row">
                             
                             
-                            <div class="item">
+                            <div class="item"> <!--je modifie ici pour l'overlay -->
                                 <div class="col-md-5">
-                                    <a href="img/Img_Aire/AIRE_cuisine_ 2_big.JPG" data-lightbox="image_Aire"><img src="img/Img_Aire/AIRE_cuisine_ 2_big.JPG" alt="Cuisine" title="Cliquer pour visiter"></a>
+                                    <a href="img/Img_Aire/AIRE_cuisine_ 2_big.JPG" data-lightbox="image_Aire"><div class="overlay-image"><img class="image" src="img/Img_Aire/AIRE_cuisine_ 2_big.JPG" alt="Cuisine" title="Cliquer pour visiter">
+                                        <div class="hover">
+                                            <div class="text">Visiter l'appartement
+                                        </div></div>
+                                    </div></a>
                                 </div>
                             </div>
                             
@@ -347,7 +352,8 @@
                                                         
                             <div class="item second-item">
                                 <div class="col-md-3">
-                                    <a href="img/Img_Aire/Aire_cuisine_1_big.JPG" data-lightbox="image_Aire"><img src="img/Img_Aire/piscine.jpg" alt="Piscine municipale" title="Piscine municipale"></a>
+                                    <a href="img/Img_Aire/Aire_cuisine_1_big.JPG" data-lightbox="image_Aire"><img src="img/Img_Aire/vue_aire_aerienne.jpg" alt="vue aérienne" title="Aire vue du ciel"></a>
+
                                     <a href="img/Img_Aire/AIRE_salle_bain_2.jpg" data-lightbox="image_Aire"><img src="img/Img_Aire/Adour.jpg" alt="image 2" title="l'Adour"></a>    
                                 </div>
                             </div>
@@ -388,93 +394,147 @@
                     </div>
                 </div>            
             </section><!--fin de la section projects-->
+
+             <!-- *****************   Ile de Ré  ********************----->
             <!--début de section projects_2 ici-->
             <section id="projects_2" class="content-section"><!--fait dans CSS-->
                 <div class="section-heading">
                     <h1>Location pour des vacances sur<br><em>l'Ile de Ré</em></h1>
-                    <p>Intérieur totalement rénové, 2ème étage 
-                    <br>80m2, 2 chambres, 1 garage à vélos, 1 cave </p>
+                    <p>Ici tu mets le baratin que tu veux *************************<br>Le br d'aller à la ligne blablablablablablablabla </p>
                 </div>
                 <div class="section-content">
                     <div class="masonry">
                         <div class="row">
+                            <div class="item"> <!--je modifie ici pour l'overlay -->
+                                <div class="col-md-5">
+                                    <a href="img/Img_Ile_Re/chambre_1_big.jpg" data-lightbox="image_Ile"><div class="overlay-image"><img class="image" src="img/Img_Ile_Re/facade_1_big.jpg" alt="île de Ré" title="Ile de Ré">
+                                        <div class="hover">
+                                            <div class="text">Visiter la maison
+                                        </div></div>
+                                    </div></a>
+                                </div>
+                            </div>
                             <div class="item">
-                                <div class="col-md-4"><!--La c'est col-md-8 mais on essaye col-md-4-->
-                                    <!--Il faudra des vraies photos assez grandes. celles-ci sont trop petites-->
-                                    <!--le data-lightbox="image_Ile" permet de ne pas avoir les photos mélangées avec le data-lightbox="image_Aire"-->
-                                    <a href="img/Img_Ile_Re/facade_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/facade_1.jpg" alt="Ile de Ré" title="Cliquer pour visiter"></a>
+                                <div class="col-md-3">
+                                    <a href="img/Img_Ile_Re/chambre_2_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/marais_3_big.jpg" alt="Ile de Ré" title="Cliquer pour visiter"></a>
+                                    <a href="img/Img_Ile_Re/sejour_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/vue_portail_1_big.jpg" alt="image 2" title="cuisine"></a>
                                 </div>
                             </div>
                             <div class="item second-item">
                                 <div class="col-md-4">
-                                    <a href="img/Img_Ile_Re/cuisine_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/cuisine_1.jpg" alt="image 2" title="cuisine"></a>
+                                    <a href="img/Img_Ile_Re/cuisine_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/cuisine_1.jpg" alt="image 2" title="cuisine" class="a_cacher"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/Img_Ile_Re/entree_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/cuisine_1.jpg" alt="image 2" title="cuisine" class="a_cacher"></a>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <div id="map"> <!--Map Google-->
+                
+                                        <!-- Comment renseigner vos propres coordonnées de carte
+                                            1. Accédez à Google Maps
+                                            2. Cliquez sur votre point de localisation
+                                            3. Cliquez sur "Partager" et choisissez l'onglet "Intégrer la carte"
+                                            4. Copiez uniquement l'URL et collez-la dans le champ src = "" ci-dessous
+                                        -->
+                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.121664244389!2d-1.516679684177534!3d46.24780908883413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48040bda132b3da5%3A0xf8561bae5e68721f!2s9%20Avenue%20des%20Salines%2C%2017880%20Les%20Portes-en-R%C3%A9!5e0!3m2!1sfr!2sfr!4v1619528830352!5m2!1sfr!2sfr" width="100%" height="470px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/Img_Ile_Re/chambre_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/chambre_1.jpg" alt="image 3" title="chambre 1"></a>
+                                    <a href="img/Img_Ile_Re/portail_int_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/sejour_1.jpg" alt="image 4" class="a_cacher"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/Img_Ile_Re/sejour_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/sejour_1.jpg" alt="image 4"></a>
+                                    <a href="img/Img_Ile_Re/salon_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/salon_1.jpg" alt="image 5" class="a_cacher"></a>
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-4"><!--C'était col-md-8 pour agrandir mais ça pixelise-->
-                                    <a href="img/Img_Ile_Re/salon_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/salon_1.jpg" alt="image 5"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4"><!--C'était col-md-8 pour agrandir mais ça pixelise-->
-                                    <a href="img/Img_Ile_Re/vue_portail_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/vue_portail_1.jpg" alt="image 6"></a>
+                                <div class="col-md-4">
+                                    <a href="img/Img_Ile_Re/sejour_2_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/douche_1_big.jpg" alt="image 6" class="a_cacher"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>            
             </section><!--fin de la section projects_2-->
+
+
             <!--Début de la section projects_3 (appart Eauze)-->
-            <section id="projects_3" class="content-section"><!--fait dans CSS-->
+             <!-- *****************   Eauze ********************----->
+                <section id="projects_3" class="content-section">
                 <div class="section-heading">
-                    <h1>Appartement au centre de<br><em>Eauze</em></h1>
+                    <h1>Maison au centre de<br><em>Eauze</em></h1>
                     <p>Intérieur totalement rénové, 2ème étage 
                     <br>80m2, 2 chambres, 1 garage à vélos, 1 cave </p>
                 </div>
-            <div class="section-content">
-                <div class="masonry">
-                    <div class="row">
-                        <div class="item">
-                            <div class="col-md-3"><!--c'était 8-->
-                                <!--Il faut que je revoie les dimensions des photos positionnées ici-->
-                                <!--Les images qui suivent a href sont celles qui défilent et les images img src sont celles qui sont sur la -->
-                                <!--Il faut voir pourquoi l'image pixelise-->
-                                <a href="img/Img_Eauze/facade_1_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Eauze/facade_1_sm.jpg" alt="Eauze" title="Cliquer pour visiter"></a>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item"> <!--je modifie ici pour l'overlay -->
+                                <div class="col-md-5">
+                                    <a href="img/Img_Eauze/salon_1_big.jpg" data-lightbox="image_Eauze"><div class="overlay-image"><img class="image" src="img/Img_Eauze/facade_1_big.jpg" alt="île de Ré" title="Ile de Ré">
+                                        <div class="hover">
+                                            <div class="text">Visiter la maison
+                                        </div></div>
+                                    </div></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item second-item">
-                            <div class="col-md-3"><!--c'était 4-->
-                                <a href="img/Img_Eauze/facade_2_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Eauze/facade_2_sm.jpg" alt="image 2" title="rue Eauze"></a>
+                            <div class="item">
+                                <div class="col-md-3">
+                                    <a href="img/Img_Eauze/chambre_1_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Eauze/rue.jpg" alt="Ile de Ré" title="Cliquer pour visiter"></a>
+                                    <a href="img/Img_Eauze/salon_2_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Eauze/place.jpg" alt="image 2" title="cuisine"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-3"><!--c'était 4-->
-                                <a href="img/Img_Eauze/salon_2_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Eauze/cuisine_1_big.jpg" alt="image 3" title="ruelle Eauze"></a>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/Img_Eauze/chambre_2_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Ile_Re/cuisine_1.jpg" alt="image 2" title="cuisine" class="a_cacher"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-4">
-                                <a href="img/Img_Eauze/salon_1_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Eauze/chambre_1_big.jpg" alt="image 4"></a>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/Img_Eauze/cuisine_1_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Ile_Re/cuisine_1.jpg" alt="image 2" title="cuisine" class="a_cacher"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-4"><!--c'était 8-->
-                                <a href="img/Img_Eauze/facade_2_big.jpg" data-lightbox="image_Eauze"><img src="img/Img_Eauze/chambre_2_big.jpg" alt="image 5"></a>
+                            
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <div id="map"> <!--Map Google-->
+                
+                                        <!-- Comment renseigner vos propres coordonnées de carte
+                                            1. Accédez à Google Maps
+                                            2. Cliquez sur votre point de localisation
+                                            3. Cliquez sur "Partager" et choisissez l'onglet "Intégrer la carte"
+                                            4. Copiez uniquement l'URL et collez-la dans le champ src = "" ci-dessous
+                                        -->
+                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.8011644848953!2d0.09799081576559397!3d43.85994974705413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aa038e54ff8d07%3A0xdc0f43ca0054e5e0!2s24%20Rue%20Robert%20Daury%2C%2032800%20Eauze!5e0!3m2!1sfr!2sfr!4v1619531006715!5m2!1sfr!2sfr" width="100%" height="470px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/Img_Eauze/facade_2_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/sejour_1.jpg" alt="image 4" class="a_cacher"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/Img_Ile_Re/salon_1_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/salon_1.jpg" alt="image 5" class="a_cacher"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/Img_Ile_Re/sejour_2_big.jpg" data-lightbox="image_Ile"><img src="img/Img_Ile_Re/douche_1_big.jpg" alt="image 6" class="a_cacher"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>            
+                </div>            
         </section><!--fin de la section projects-->
         <!--début de section projects_2 ici-->
 
@@ -511,31 +571,31 @@
             <!--Début du bloc "blog" on changera le nom plus tard-->
             <section id="blog" class="content-section"><!--Début de la section "blog"-->
                 <div class="section-heading">
-                    <h1>Blog<br><em>Entries</em></h1>
-                    <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum. 
-                    <br>Phasellus luctus odio eget dui imperdiet.</p>
+                    <h1>Disponibilités pour<br><em>l'Ile de Ré</em></h1>
+                    <p>Semaines disponibles pour les 4 mois suivants
+                    <br>Ne tardez pas à nous contacter, Il y a beaucoup de demandes !</p>
                 </div>
                 <div class="section-content">
                     <div class="tabs-content">
                         <div class="wrapper">
                             <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                            <li><a href="#tab1" class="active">Mai 2021</a></li>
-                            <li><a href="#tab2">Juin 2021</a></li>                                
-                            <!--li><a href="#tab3">Juillet 2021</a></li-->                               
-                            <!--li><a href="#tab4">Aout 2021</a></li-->
+                            <li><a href="#tab1" class="active">Juin 2021</a></li>
+                            <li><a href="#tab2">Juillet 2021</a></li>                                
+                            <li><a href="#tab3">Août 2021</a></li>                               
+                            <li><a href="#tab4">Septembre 2021</a></li>
 
                              <!--Ca peut aussi être vue de cette façon-->
-                             <li><a href="#tab3">Ile de Ré 2021</a></li>                               
-                            <li><a href="#tab4">Ciboure 2021</a></li>
+                             <!--li><a href="#tab3">Ile de Ré 2021</a></li>                               
+                            <li><a href="#tab4">Ciboure 2021</a></li-->
                             </ul>
                             <section id="first-tab-group" class="tabgroup">
-                                <div id="tab1"><!--Actuellement l'onglet Mai 2021-->
+                                <div id="tab1"><!--Actuellement l'onglet Juin 2021-->
                                     <ul>
                                         <li>
                                             <div class="item">
                                                 <img src="img/ciboure.jpg" alt="Ciboure">
                                                 <div class="text-content">
-                                                    <h4>A Ciboure</h4>
+                                                    <h4>1ère Semaine</h4>
                                                     <span>du 18 au 25 Mai 2021</span>
                                                     <p>Cette semaine est encore disponible. Je vous recommande d'en profiter. En principe, Il n'y aura ni raz de marais, ni tsunami. zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.</p>
                                                     
@@ -549,9 +609,9 @@
                                             <div class="item">
                                                 <img src="img/Cauterets.jpg" alt="Chez Gilou">
                                                 <div class="text-content">
-                                                    <h4>A Cauterets</h4>
-                                                    <span>du 16 July 2018</span>
-                                                    <p>Vous pourrez faire du ski de fond à la Fruitière. Vous pourrez également faire du patin à glace sur le lac de Gaube. Vous pourrez chasser le Dahu doré au pied du Vignemale, En cherchant attentivement vous trouverez des ceps des neige.</p>
+                                                    <h4>2ème Semaine</h4>
+                                                    <span>du 7 au 13 Juin 2021</span>
+                                                    <p><b>Désolée.</b>Cette semaine n'est Malheuresement plus disponible. Je vous recommande de nous contacter dès votre projet de vacances envisagé car il y a beaucoup de damandes *****************</p>
                                                     
                                                     <div class="accent-button button">
                                                         <a href="#contact">Me contacter</a>
@@ -561,7 +621,7 @@
                                         </li>
                                         <li>
                                             <div class="item">
-                                                <img src="img/AIRE_marche.jpg" alt="marché de Aire/Adour">
+                                                <img src="img/Img_Aire/AIRE_marche.jpg" alt="marché de Aire/Adour">
                                                 <div class="text-content">
                                                     <h4>Marché de Aire sur l'Adour</h4>
                                                     <span>10 July 2018</span>
@@ -575,7 +635,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="tab2"><!--Actuellement onglet juin 2021-->
+                                <div id="tab2"><!--Actuellement onglet juillet 2021-->
                                     <ul>
                                         <li>
                                             <div class="item">
@@ -586,7 +646,7 @@
                                                     <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
                                                     
                                                     <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
+                                                        <a href="#contact">Me contacter</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -621,11 +681,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="tab3"><!--Actuellement onglet Ile de Ré 2021-->
+                                <div id="tab3"><!--Actuellement onglet Août 2021-->
                                     <ul>
                                         <li>
                                             <div class="item">
-                                                <img src="img/Ile_Maison_la_Couarde_1.jpg" alt="">
+                                                <img src="img/Img_Ile_Re/Ile_la_Couarde_1.jpg" alt="">
                                                 <div class="text-content">
                                                     <h4>A 2kms du phare des baleines</h4>
                                                     <span>du 1er au 07 juillet 2021</span>
@@ -667,7 +727,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="tab4"><!--Actuellement onglet Ciboure 2021-->
+                                <div id="tab4"><!--Actuellement onglet Septembre 2021-->
                                     <ul>
                                         <li>
                                             <div class="item">
@@ -678,7 +738,7 @@
                                                     <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
                                                     
                                                     <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
+                                                        <a href="#contact">Me contacter</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -692,7 +752,7 @@
                                                     <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
                                                     
                                                     <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
+                                                        <a href="#contact">Me contacter</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -706,7 +766,7 @@
                                                     <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.</p>
                                                     
                                                     <div class="accent-button button">
-                                                        <a href="#contact">Continue Reading</a>
+                                                        <a href="#contact">Me contacter</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -734,9 +794,9 @@
                 </div>
                 <div id="contact-content">
                     <div class="section-heading">
-                        <h1>Contact<br><em>Un ChouChou</em></h1>
-                        <p>Ici on peut mettre ce que l'on veut .... Curabitur hendrerit mauris mollis ipsum vulputate rutrum. 
-                        <br>Phasellus luctus odio eget dui imperdiet.</p>
+                        <h1>Contacter<br><em>AireActif</em></h1>
+                        <p>Complétez le formulaire ci-dessous en nous laissant un numéro de téléphone.
+                        <br>Toute réservation sera précédée d'un appel téléphonique</p>
                         
                     </div>
                     <div class="section-content">
@@ -747,12 +807,17 @@
                                     <input name="name" type="text" class="form-control" id="name" placeholder="Votre nom..." required="">
                                 </fieldset>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                 <fieldset>
                                     <input name="email" type="email" class="form-control" id="email" placeholder="Votre email..." required="">
                                 </fieldset>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-2">
+                                    <fieldset><!--ajouté-->
+                                        <input name="message" type="text" class="form-control" id="subject" placeholder="Téléphone..." required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3">
                                 <fieldset>
                                     <input name="subject" type="text" class="form-control" id="subject" placeholder="Objet..." required="">
                                 </fieldset>
