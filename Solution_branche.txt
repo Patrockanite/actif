@@ -1,0 +1,4 @@
+﻿git pull origin isabranch --allow-unrelated-histories
+
+m'a permis de corriger le problème.
+
