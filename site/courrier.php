@@ -39,7 +39,7 @@
         <b>Email : </b>' . htmlspecialchars($_POST['email']) . '<br>
         <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
 
-        $retour = mail('patrtickannoot@orange.fr',$objet , $contenu, $entete);
+        $retour = mail('patrickannoot@orange.fr',$objet , $contenu, $entete);
 
         if($retour) {
             echo '<p>Votre message a bien été envoyé.</p>';
