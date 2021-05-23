@@ -50,6 +50,12 @@
         }
     }
     ?>
+    <!--Modèle bootstrap
+    <div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p>...</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div-->
     <p><a href="index.html">Retour à l'accueil</a></p>
 </body>
 </html>
